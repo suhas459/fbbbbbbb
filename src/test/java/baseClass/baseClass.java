@@ -3,6 +3,7 @@ package baseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,9 +21,11 @@ public void launchTheBrowser() {
 	
  driver= new ChromeDriver(c);
 	
+ 
 	
 	driver.get("https://www.facebook.com/campaign/landing.php");
 	
+	Reporter.log("login to this web site", true);
 	
 	
 }
